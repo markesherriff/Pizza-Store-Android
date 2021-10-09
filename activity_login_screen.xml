@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginScreen">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/mainView_headerImage3"
+            android:layout_width="731dp"
+            android:layout_height="51dp"
+            android:scaleType="centerCrop"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:srcCompat="@drawable/pizza_hut" />
+
+        <EditText
+            android:id="@+id/loginEditUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="username"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/loginEditPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/login_submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="log in" />
+
+        <Button
+            android:id="@+id/continueGuestBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="continue as guest" />
+
+        <Button
+            android:id="@+id/createAccountPageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CREATE NEW ACCOUNT" />
+
+        <Button
+            android:id="@+id/lg_editAccountBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EDIT ACCOUNT" />
+
+        <Button
+            android:id="@+id/orderPizzaWithBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="order pizza with " />
+
+        <Button
+            android:id="@+id/logOutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="log out" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
