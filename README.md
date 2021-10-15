@@ -10,7 +10,7 @@ Mobile Android application created in a course at Humber College. Used for a fin
 * receipt page with order information
 * create an account
 * login with credentials
-*shared preference storage of user info
+* shared preference storage of user info
 * edit account
 * log out
 
