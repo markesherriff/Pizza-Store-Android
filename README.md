@@ -14,7 +14,7 @@ shared preference storage of user info
 edit account
 log out
 
-# Demo
+## Demo
 [<img alt="youtube link to watch demo" width="75%" src="pizzaStoreThumbnail.png" />](https://www.youtube.com/watch?v=cvNTddy40i0)
 
 
