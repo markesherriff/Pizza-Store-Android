@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main_page"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/mainView_headerImage"
+            android:layout_width="731dp"
+            android:layout_height="51dp"
+            android:scaleType="centerCrop"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:srcCompat="@drawable/pizza_hut" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/op_sizeGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp">
+
+                    <TextView
+                        android:id="@+id/op_sizeLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:height="50dp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:gravity="bottom"
+                        android:text="Select Pizza Size:"
+                        android:textAlignment="viewStart"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/sizeSmallRad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="small -- $9" />
+
+                    <RadioButton
+                        android:id="@+id/op_sizeMediumRad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="medium -- $10" />
+
+                    <RadioButton
+                        android:id="@+id/op_sizeLargeRad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="large -- $11"
+                        tools:layout_editor_absoluteX="161dp"
+                        tools:layout_editor_absoluteY="319dp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/op_toppingsLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:height="50dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="bottom"
+                    android:text="Select Pizza Toppings:"
+                    android:textSize="24sp" />
+
+                <CheckBox
+                    android:id="@+id/op_toppingsVeggiesChk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="veggies -- $2" />
+
+                <CheckBox
+                    android:id="@+id/op_toppingsMeatChk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="meat -- $2" />
+
+                <CheckBox
+                    android:id="@+id/op_toppingsCheeseChk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="cheese -- $2" />
+
+                <TextView
+                    android:id="@+id/op_deliveryAdressLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:height="50dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="bottom"
+                    android:text="Delivery Address Details:"
+                    android:textAlignment="viewStart"
+                    android:textSize="24sp" />
+
+                <Switch
+                    android:id="@+id/op_isDeliverySwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:switchMinWidth="120dp"
+                    android:text="pick up"
+                    android:textAlignment="viewStart" />
+
+                <EditText
+                    android:id="@+id/op_editAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-medium"
+                    android:hint="enter delivery address"
+                    android:inputType="textPersonName"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/op_totalPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="bottom"
+                    android:text="Order Total: $0"
+                    android:textAlignment="viewStart"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/mainView_orderPizzaBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="ORDER PIZZA" />
+
+                <Button
+                    android:id="@+id/op_accountBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Account" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
